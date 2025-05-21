@@ -1,0 +1,39 @@
+{
+    "name": "thungdemo/laravel-sms",
+    "description": "Laravel wrapper for Thungdemo/Sms library",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Thungdemo Ezong",
+            "email": "tezongthungdemo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/config": "^9.0|^10.0|^11.0",
+        "illuminate/support": "^9.0|^10.0|^11.0",
+        "illuminate/queue": "^9.0|^10.0|^11.0",
+        "thungdemo/sms": "^3.0"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/nk-square/sms.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Thungdemo\\LaravelSms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Thungdemo\\LaravelSms\\Providers\\SmsServiceProvider"
+            ],
+            "aliases": {
+                "Sms": "Thungdemo\\LaravelSms\\Facades\\Sms"
+            }
+        }
+    }
+}
