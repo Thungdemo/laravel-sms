@@ -35,5 +35,6 @@
                 "Sms": "Thungdemo\\LaravelSms\\Facades\\Sms"
             }
         }
-    }
+    },
+    "license": "MIT"
 }
